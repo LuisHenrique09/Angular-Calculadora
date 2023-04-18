@@ -1,0 +1,22 @@
+<form>
+    <input type="number" name="num1" [(ngModel)]="num1">
+    <input type="number" name="num2" [(ngModel)]="num2">
+
+    <button type="button" (click)="calc()">
+        +
+    </button>
+
+    <button type="button" (click)="calc2()">
+        -
+    </button>
+
+    <button type="button" (click)="calc3()">
+        *
+    </button>
+
+    <button type="button" (click)="calc4()">
+        /
+    </button>
+
+    <input name="result" [(ngModel)]="result" disabled>
+</form>
