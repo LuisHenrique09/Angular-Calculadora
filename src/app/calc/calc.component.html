@@ -1,22 +1,26 @@
 <form>
-    <input type="number" name="num1" [(ngModel)]="num1">
-    <input type="number" name="num2" [(ngModel)]="num2">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Valor 1:</span>
+        <input type="number" name="num1" [(ngModel)]="num1" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
 
-    <button type="button" (click)="calc()">
-        +
-    </button>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Valor 2:</span>
+        <input type="number" name="num2" [(ngModel)]="num2" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
 
-    <button type="button" (click)="calc2()">
-        -
-    </button>
+    <div class="mb-3 text-center">
+    <button type="button" class="btn btn-success" (click)="calc()">+</button>
 
-    <button type="button" (click)="calc3()">
-        *
-    </button>
+    <button type="button" class="btn btn-danger" (click)="calc2()">-</button>
 
-    <button type="button" (click)="calc4()">
-        /
-    </button>
+    <button type="button" class="btn btn-warning" (click)="calc3()">*</button>
 
-    <input name="result" [(ngModel)]="result" disabled>
+    <button type="button" class="btn btn-info" (click)="calc4()">/</button>
+    </div>
+
+    <div class="input-group mb-3">
+        <input name="result" [(ngModel)]="result" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" disabled>
+      </div>
+
 </form>
